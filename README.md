@@ -1,1 +1,1 @@
-![alt text](homePage.jpg)
+![alt text](homePage.png)
