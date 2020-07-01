@@ -1,0 +1,518 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;;200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500;1,700&family=Poppins:wght@300;400;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding: 3% 5% 0 5%;
+}
+
+/* Header */
+li, a{
+    font-weight: 400;
+    font-size: 1em;
+    color: #111;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 50px;
+   
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navlinks{
+    list-style: none;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0 24px; 
+    
+}
+
+.navlinks li a{
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+
+}
+
+.navlinks li a:before{
+  content: '';
+  position: absolute;
+  background-color:black;
+  bottom:0;
+  left: 0;
+  height: 3%;
+  width: 0;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: 1;
+
+}
+
+.navlinks  li a:hover:before{
+    width: 100%; 
+}
+
+.navlinks  li:nth-child(5){
+    padding-right: 0;
+
+}
+
+.logo{
+    width:50px;
+    height:50px;
+}
+/* End of header*/
+
+
+/* gray Space*/
+.graySpacing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cbd1d2;
+    padding: 120px ;
+}
+
+.img-links-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.img-item{
+    width: 32%;
+}
+
+.section-text-small{
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #7b8c8f;
+}
+
+.section-text-big{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.25rem;
+    width: 70%;
+    line-height: 1em;
+}
+
+.section-text{
+    display: flex;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+.img-links-content{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.img-links-title{
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+}
+
+.img-links-title:before{
+    content: '';
+    position: absolute;
+    background-color:black;
+    bottom:0;
+    left: 0;
+    height: 4%;
+    width: 0;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    z-index: 1;
+  
+}
+
+.img-links-title:hover:before{
+      width: 100%; 
+}
+
+
+/* End of gray Space*/
+
+/* Courses*/
+
+.courses-container{
+    padding: 120px  300px 80px 300px;
+    
+}
+
+.courses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #DBDBDB;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.courseImage{
+    height: auto;
+    width: 100%;
+}
+
+.number, .icon{
+    flex-grow: 2;
+}
+
+.middle-text{
+    flex-grow: 4;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    max-width: 40%;
+    padding-right: 40px;
+   
+}
+
+.middle-text h1{
+    font-size: 40px;
+}
+.middle-text p{
+    font-size: 16px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.middle-image{
+    margin: 0 40px 0 0;
+    
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.number h2{
+    font-size: 30px;
+}
+
+ion-icon{
+   
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    position: relative;
+}
+
+ion-icon:before{
+    content: '';
+    position: absolute;
+    background-color:black;
+    bottom:0;
+    left: 0;
+    height: 4%;
+    width: 0;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    z-index: 1;
+  
+}
+
+ion-icon:hover:before{
+      width: 100%; 
+}
+
+/* End of courses*/
+
+/* Register*/
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #F5F6F8;
+    padding: 120px  300px 120px 300px;
+}
+
+.register-bg{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.input {
+    position: relative;
+    display: block;
+   
+    
+  }
+  
+  
+  .button {
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .button2{
+    border: none;
+  }
+  
+    
+  #email {
+    width: 100%;
+    height: 100px;
+    background: white;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+   
+
+  }
+  
+  #submit {
+    width: 30%;
+    height: 60px;
+    background: black;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+  }
+
+  
+  
+  #submit:hover {
+    background:#424242;
+  }
+    
+  
+  input:focus {
+    outline: none;
+    outline: 1px solid #DBDBDB;
+
+  }
+
+  .registerHeader{
+      margin-bottom: 14px;
+      display: inline-block;
+      text-align: center;
+      font-weight: 600;
+  }
+
+
+  .registerText{
+      margin-bottom: 40px;
+      text-align: center;
+  }
+
+/* End of register*/
+
+
+
+/*Daily life*/
+
+.footer-bg{
+    background-color: black;
+    padding: 120px ;
+}
+
+.section-text-small-light, 
+.registerHeaderlight, 
+.registerTextlight,
+.section-text-name-light{
+    color: white;
+}
+
+.item-text{
+    display: flex;
+    margin-bottom: 60px;
+}
+.firsttext{
+    flex-basis: 100%;
+}
+
+.item-videos{
+    display: flex;
+}
+
+.first-video, .second-video{
+    height: auto;
+    width: 100%;
+}
+.first-video{
+    margin-right: 40px;
+}
+.vText{
+    margin-top: 40px;
+}
+/* End of Daily life*/
+
+    
+
+
+
+
+
+
+@media all and (max-width:542px) {
+
+
+	header {
+		justify-content: space-around;
+    }
+
+    .graySpacing{
+       padding: 30px;
+       max-width: 98%;
+    }
+
+
+
+    .section-text-small {
+        margin-bottom: 0;
+    }
+
+    .section-text-big{
+        font-size: 28px;
+        width: 98%;
+        letter-spacing: 2px;
+        margin: 8px 0 8px 0 ;
+
+    }
+
+    .img-item{
+        width: 98%;
+        margin-bottom: 20px;
+    }
+
+    .courses-container{
+        max-width: 98%;
+        padding: 30px;
+
+    }
+    .middle-text h1{
+        font-size: 18px;
+    }
+
+    .middle-text{
+        padding: 0;
+        max-width: 100%;
+
+    }
+
+
+    .courses-image{
+        height: auto;
+        width: 50%;
+    }
+
+    .number{
+        display: none;
+    } 
+    .middle-text p{
+        font-size: 14px;
+    }
+
+    .register{
+        max-width: 98%;
+        padding: 40px 16px;
+        margin: 0;
+    }
+
+    #submit{
+        height: 40px;
+        top: 10px;
+        right: 10px;
+    }
+
+    #email{
+        height: 60px;
+    }
+
+    .registerHeader{
+        font-size: 18px;
+    }
+    .registerText{
+        font-size: 14px;
+    }
+
+    .footer-bg{
+        padding: 30px;
+        max-width: 98%;
+    }
+
+     .item-videos{
+      display: inline-block;
+      align-items: center;
+      width: 100%;
+    }
+
+    .vText{
+        margin: 15px 0 30px 0;
+    }
+
+    .item-text{
+        display: inline-block;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+
+    
+    @media all and (max-width:802px){
+        .graySpacing{
+            padding: 50px;
+            max-width: 98%;
+         }
+    
+         .courses-container{
+            max-width: 98%;
+            padding: 30px;
+        }
+    
+    
+    }
+    
+
+}
+
+
+
+
+
